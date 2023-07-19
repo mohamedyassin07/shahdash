@@ -6,7 +6,6 @@
  * This file is used to markup the public-facing aspects of the plugin.
  *
  * @link       https://shahbandr.com
- * @since      1.0.0
  *
  * @package    Shahbandr_Dashboard
  * @subpackage Shahbandr_Dashboard/public/partials

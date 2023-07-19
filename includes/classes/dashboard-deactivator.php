@@ -4,7 +4,6 @@
  * Fired during plugin deactivation
  *
  * @link       https://shahbandr.com
- * @since      1.0.0
  *
  * @package    Shahbandr_Dashboard
  * @subpackage Shahbandr_Dashboard/includes
@@ -15,7 +14,6 @@
  *
  * This class defines all code necessary to run during the plugin's deactivation.
  *
- * @since      1.0.0
  * @package    Shahbandr_Dashboard
  * @subpackage Shahbandr_Dashboard/includes
  * @author     Shahbandr Team <info@shahbandr.com>
@@ -27,7 +25,6 @@ class Shahbandr_Dashboard_Deactivator {
 	 *
 	 * Long Description.
 	 *
-	 * @since    1.0.0
 	 */
 	public static function deactivate() {
 

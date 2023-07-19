@@ -9,7 +9,6 @@
  * that starts the plugin.
  *
  * @link              https://shahbandr.com
- * @since             1.0.0
  * @package           Shahbandr_Dashboard
  *
  * @wordpress-plugin
@@ -30,28 +29,43 @@ if ( ! defined( 'WPINC' ) ) {
 	die;
 }
 
-/**
- * Currently plugin version.
- * Start at version 1.0.0 and use SemVer - https://semver.org
- * Rename this for your plugin and update it as you release new versions.
- */
-define( 'SHAHBANDR_DASHBOARD_VERSION', '1.0.0' );
+
+// Plugin Name
+define( 'SHAH_NAME', 'Shahbandr_Dashboard' );
+
+// Plugin Slug
+define( 'SHAH_SLUG', 'shah_dash' );
+
+// Plugin version
+define( 'SHAH_VER',	'1.0.0' );
+
+// Plugin Root File
+define( 'SHAH_FILE', __FILE__ );
+
+// Plugin base
+define( 'SHAH_BASE', ( SHAH_FILE ) );
+
+// Plugin Folder Path
+define( 'SHAH_DIR',	plugin_dir_path( SHAH_FILE ) );
+
+// Plugin Folder URL
+define( 'SHAH_URL',	plugin_dir_url( SHAH_FILE ) );
 
 /**
  * The code that runs during plugin activation.
- * This action is documented in includes/class-shahbandr-dashboard-activator.php
+ * This action is documented in includes/classes/dashboard-activator.php
  */
 function activate_shahbandr_dashboard() {
-	require_once plugin_dir_path( __FILE__ ) . 'includes/class-shahbandr-dashboard-activator.php';
+	require_once plugin_dir_path( __FILE__ ) . 'includes/classes/dashboard-activator.php';
 	Shahbandr_Dashboard_Activator::activate();
 }
 
 /**
  * The code that runs during plugin deactivation.
- * This action is documented in includes/class-shahbandr-dashboard-deactivator.php
+ * This action is documented in includes/classes/dashboard-deactivator.php
  */
 function deactivate_shahbandr_dashboard() {
-	require_once plugin_dir_path( __FILE__ ) . 'includes/class-shahbandr-dashboard-deactivator.php';
+	require_once plugin_dir_path( __FILE__ ) . 'includes/classes/dashboard-deactivator.php';
 	Shahbandr_Dashboard_Deactivator::deactivate();
 }
 
@@ -62,7 +76,7 @@ register_deactivation_hook( __FILE__, 'deactivate_shahbandr_dashboard' );
  * The core plugin class that is used to define internationalization,
  * admin-specific hooks, and public-facing site hooks.
  */
-require plugin_dir_path( __FILE__ ) . 'includes/class-shahbandr-dashboard.php';
+require plugin_dir_path( __FILE__ ) . 'includes/classes/dashboard.php';
 
 /**
  * Begins execution of the plugin.
@@ -71,7 +85,6 @@ require plugin_dir_path( __FILE__ ) . 'includes/class-shahbandr-dashboard.php';
  * then kicking off the plugin from this point in the file does
  * not affect the page life cycle.
  *
- * @since    1.0.0
  */
 function run_shahbandr_dashboard() {
 
