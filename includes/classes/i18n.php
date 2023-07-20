@@ -22,7 +22,7 @@
  * @subpackage Shahbandr_Dashboard/includes
  * @author     Shahbandr Team <info@shahbandr.com>
  */
-class Shahbandr_Dashboard_i18n {
+class ShahDash_i18n {
 
 	/**
 	 * Load the plugin text domain for translation.

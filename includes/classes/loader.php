@@ -20,7 +20,7 @@
  * @subpackage Shahbandr_Dashboard/includes
  * @author     Shahbandr Team <info@shahbandr.com>
  */
-class Shahbandr_Dashboard_Loader {
+class ShahDash_Loader {
 
 	/**
 	 * The array of actions registered with WordPress.

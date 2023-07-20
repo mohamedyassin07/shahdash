@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Fired during plugin activation
+ * Fired during plugin deactivation
  *
  * @link       https://shahbandr.com
  *
@@ -10,15 +10,15 @@
  */
 
 /**
- * Fired during plugin activation.
+ * Fired during plugin deactivation.
  *
- * This class defines all code necessary to run during the plugin's activation.
+ * This class defines all code necessary to run during the plugin's deactivation.
  *
  * @package    Shahbandr_Dashboard
  * @subpackage Shahbandr_Dashboard/includes
  * @author     Shahbandr Team <info@shahbandr.com>
  */
-class Shahbandr_Dashboard_Activator {
+class ShahDash_Deactivator {
 
 	/**
 	 * Short Description. (use period)
@@ -26,7 +26,7 @@ class Shahbandr_Dashboard_Activator {
 	 * Long Description.
 	 *
 	 */
-	public static function activate() {
+	public static function deactivate() {
 
 	}
 

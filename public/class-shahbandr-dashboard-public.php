@@ -19,7 +19,7 @@
  * @subpackage Shahbandr_Dashboard/public
  * @author     Shahbandr Team <info@shahbandr.com>
  */
-class Shahbandr_Dashboard_Public {
+class ShahDash_Public {
 
 	/**
 	 * The ID of this plugin.
@@ -60,10 +60,10 @@ class Shahbandr_Dashboard_Public {
 		 * This function is provided for demonstration purposes only.
 		 *
 		 * An instance of this class should be passed to the run() function
-		 * defined in Shahbandr_Dashboard_Loader as all of the hooks are defined
+		 * defined in ShahDash_Loader as all of the hooks are defined
 		 * in that particular class.
 		 *
-		 * The Shahbandr_Dashboard_Loader will then create the relationship
+		 * The ShahDash_Loader will then create the relationship
 		 * between the defined hooks and the functions defined in this
 		 * class.
 		 */
@@ -82,10 +82,10 @@ class Shahbandr_Dashboard_Public {
 		 * This function is provided for demonstration purposes only.
 		 *
 		 * An instance of this class should be passed to the run() function
-		 * defined in Shahbandr_Dashboard_Loader as all of the hooks are defined
+		 * defined in ShahDash_Loader as all of the hooks are defined
 		 * in that particular class.
 		 *
-		 * The Shahbandr_Dashboard_Loader will then create the relationship
+		 * The ShahDash_Loader will then create the relationship
 		 * between the defined hooks and the functions defined in this
 		 * class.
 		 */

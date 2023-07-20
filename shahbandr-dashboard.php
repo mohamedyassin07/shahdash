@@ -31,7 +31,7 @@ if ( ! defined( 'WPINC' ) ) {
 
 
 // Plugin Name
-define( 'SHAH_NAME', 'Shahbandr_Dashboard' );
+define( 'SHAH_NAME', 'ShahDash' );
 
 // Plugin Slug
 define( 'SHAH_SLUG', 'shah_dash' );
@@ -49,24 +49,24 @@ define( 'SHAH_BASE', ( SHAH_FILE ) );
 define( 'SHAH_DIR',	plugin_dir_path( SHAH_FILE ) );
 
 // Plugin Folder URL
-define( 'SHAH_URL',	plugin_dir_url( SHAH_FILE ) );
+define( 'SHAH_URL',	plugin_dir_url( SHAH_FILE ) . '/' );
 
 /**
  * The code that runs during plugin activation.
- * This action is documented in includes/classes/dashboard-activator.php
+ * This action is documented in includes/classes/activator.php
  */
 function activate_shahbandr_dashboard() {
-	require_once plugin_dir_path( __FILE__ ) . 'includes/classes/dashboard-activator.php';
-	Shahbandr_Dashboard_Activator::activate();
+	require_once plugin_dir_path( __FILE__ ) . 'includes/classes/activator.php';
+	ShahDash_Activator::activate();
 }
 
 /**
  * The code that runs during plugin deactivation.
- * This action is documented in includes/classes/dashboard-deactivator.php
+ * This action is documented in includes/classes/deactivator.php
  */
 function deactivate_shahbandr_dashboard() {
-	require_once plugin_dir_path( __FILE__ ) . 'includes/classes/dashboard-deactivator.php';
-	Shahbandr_Dashboard_Deactivator::deactivate();
+	require_once plugin_dir_path( __FILE__ ) . 'includes/classes/deactivator.php';
+	ShahDash_Deactivator::deactivate();
 }
 
 register_activation_hook( __FILE__, 'activate_shahbandr_dashboard' );
@@ -88,7 +88,7 @@ require plugin_dir_path( __FILE__ ) . 'includes/classes/dashboard.php';
  */
 function run_shahbandr_dashboard() {
 
-	$plugin = new Shahbandr_Dashboard();
+	$plugin = new ShahDash();
 	$plugin->run();
 
 }
